@@ -7,7 +7,6 @@ function* getProducts() {
     try {
         const response: AxiosResponse = yield api.get('/beers?page=1&per_page=20');
         if (response.data) {
-            // console.log("RESPONSE", response.data)
             yield put(actions.getProductsSuccess(response.data));
         }
     } catch (e) {
