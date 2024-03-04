@@ -14,7 +14,6 @@ interface ProductDetailProps {
 }
 
 const ProductDetail: React.FC = ({ route }: ProductDetailProps | any) => {
-    const navigation = useNavigation<NavigationProp<ParamListBase>>();
     const product = route.params?.product
     return (
         <SafeAreaView style={{ flexDirection: 'column', justifyContent: 'center' }}>
