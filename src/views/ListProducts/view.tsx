@@ -22,8 +22,9 @@ const ListProducts: React.FC = () => {
             setBeers(products);
         }
     }, [loading, products]);
+
     return (
-        <View style={{backgroundColor: '#FFB900'}} >
+        <View style={{backgroundColor: '#FFB900'}}>
             {loading ? (
                 <Loading />
             ) : (

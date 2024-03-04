@@ -2,7 +2,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ListProducts from '../views/ListProducts/view';
 import ProductDetail from '../views/ProductDetail/view';
-import { Icon } from '@rneui/themed';
 
 const Stack = createNativeStackNavigator();
 
